@@ -1,0 +1,921 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>测试 · react-router 4 </title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="tuzhu008">
+        
+        
+    
+    <link rel="stylesheet" href="../../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-prism/prism-atom-dark.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-sectionx/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../../../styles/website.css">
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="ReduxIntegration.html" />
+    
+    
+    <link rel="prev" href="ScrollRestoration.html" />
+    
+
+    
+        <link rel="shortcut icon" href='../../../../assets/images/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../../../../assets/images/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="apple-touch-icon" href='../../../../assets/images/apple-touch-icon.png'>
+    
+    
+        
+        <link rel="apple-touch-icon" sizes="120x120" href="../../../../assets/images/apple-touch-icon-120x120.png">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="../../../../assets/images/apple-touch-icon-180x180.png">
+        
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../../">
+            
+                <a href="../../../../">
+            
+                    
+                    关于
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    react-router
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    react-router 文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">指南</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="Philosophy.html">
+            
+                <a href="Philosophy.html">
+            
+                    
+                    设计理念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="QuickStart.html">
+            
+                <a href="QuickStart.html">
+            
+                    
+                    快速开始
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="ServerRendering.html">
+            
+                <a href="ServerRendering.html">
+            
+                    
+                    服务器渲染
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="CodeSplitting.html">
+            
+                <a href="CodeSplitting.html">
+            
+                    
+                    Code 分割
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="ScrollRestoration.html">
+            
+                <a href="ScrollRestoration.html">
+            
+                    
+                    滚动恢复
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.6" data-path="Testing.html">
+            
+                <a href="Testing.html">
+            
+                    
+                    测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="ReduxIntegration.html">
+            
+                <a href="ReduxIntegration.html">
+            
+                    
+                    Redux 集成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="StaticRoutes.html">
+            
+                <a href="StaticRoutes.html">
+            
+                    
+                    静态路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="DealingWithUpdateBlocking.html">
+            
+                <a href="DealingWithUpdateBlocking.html">
+            
+                    
+                    处理更新阻塞
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">组件 API</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../api/">
+            
+                <a href="../api/">
+            
+                    
+                    API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../api/BrowserRouter.html">
+            
+                <a href="../api/BrowserRouter.html">
+            
+                    
+                    BrowserRouter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../api/HashRouter.html">
+            
+                <a href="../api/HashRouter.html">
+            
+                    
+                    HashRouter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../api/Link.html">
+            
+                <a href="../api/Link.html">
+            
+                    
+                    Link
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../api/NavLink.html">
+            
+                <a href="../api/NavLink.html">
+            
+                    
+                    NavLink
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="../api/Prompt.html">
+            
+                <a href="../api/Prompt.html">
+            
+                    
+                    Prompt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="../api/MemoryRouter.html">
+            
+                <a href="../api/MemoryRouter.html">
+            
+                    
+                    MemoryRouter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="../api/Redirect.html">
+            
+                <a href="../api/Redirect.html">
+            
+                    
+                    Redirect
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" data-path="../api/Route.html">
+            
+                <a href="../api/Route.html">
+            
+                    
+                    Route
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10" data-path="../api/Router.html">
+            
+                <a href="../api/Router.html">
+            
+                    
+                    Router
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11" data-path="../api/StaticRouter.html">
+            
+                <a href="../api/StaticRouter.html">
+            
+                    
+                    StaticRouter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12" data-path="../api/Switch.html">
+            
+                <a href="../api/Switch.html">
+            
+                    
+                    Switch
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">其他 API</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../api/history.html">
+            
+                <a href="../api/history.html">
+            
+                    
+                    history
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../api/location.html">
+            
+                <a href="../api/location.html">
+            
+                    
+                    location
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../api/match.html">
+            
+                <a href="../api/match.html">
+            
+                    
+                    match
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../api/matchPath.html">
+            
+                <a href="../api/matchPath.html">
+            
+                    
+                    matchPath
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../api/withRouter.html">
+            
+                <a href="../api/withRouter.html">
+            
+                    
+                    withRouter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="../api/context-router.html">
+            
+                <a href="../api/context-router.html">
+            
+                    
+                    contex.router
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">其他</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../../../../faq/">
+            
+                <a href="../../../../faq/">
+            
+                    
+                    常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../../.." >测试</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="testing"><a name="testing" class="anchor-navigation-ex-anchor" href="#testing"><i class="fa fa-link" aria-hidden="true"></i></a><a name="testing" class="plugin-anchor" href="#testing"><i class="fa fa-link" aria-hidden="true"></i></a>Testing</h2>
+<p>React Router relies on React context to work. This affects how you can test your components that use our components.</p>
+<h3 id="context"><a name="context" class="anchor-navigation-ex-anchor" href="#context"><i class="fa fa-link" aria-hidden="true"></i></a><a name="context" class="plugin-anchor" href="#context"><i class="fa fa-link" aria-hidden="true"></i></a>Context</h3>
+<p>If you try to unit test one of your components that renders a <link> or a <route>, etc. you&#x2019;ll get some errors and warnings about context. While you may be tempted to stub out the router context yourself, we recommend you wrap your unit test in a <staticrouter> or a <memoryrouter>. Check it out:</memoryrouter></staticrouter></route></p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">class</span> <span class="token class-name">Sidebar</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span> <span class="token punctuation">{</span>
+  <span class="token comment" spellcheck="true">// ...</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token operator">&lt;</span>div<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>button onClick<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>toggleExpand<span class="token punctuation">}</span><span class="token operator">&gt;</span>
+          expand
+        <span class="token operator">&lt;</span><span class="token operator">/</span>button<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>ul<span class="token operator">&gt;</span>
+          <span class="token punctuation">{</span>users<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span>user <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">(</span>
+            <span class="token operator">&lt;</span>li<span class="token operator">&gt;</span>
+               <span class="token operator">&lt;</span>Link to<span class="token operator">=</span><span class="token punctuation">{</span>user<span class="token punctuation">.</span>path<span class="token punctuation">}</span><span class="token operator">&gt;</span>
+                 <span class="token punctuation">{</span>user<span class="token punctuation">.</span>name<span class="token punctuation">}</span>
+               <span class="token operator">&lt;</span><span class="token operator">/</span>Link<span class="token operator">&gt;</span>
+            <span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">&gt;</span>
+          <span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">}</span>
+        <span class="token operator">&lt;</span><span class="token operator">/</span>ul<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+    <span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">// broken</span>
+<span class="token function">test</span><span class="token punctuation">(</span><span class="token string">&apos;it expands when the button is clicked&apos;</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+  <span class="token function">render</span><span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span>Sidebar<span class="token operator">/</span><span class="token operator">&gt;</span>
+  <span class="token punctuation">)</span>
+  <span class="token function">click</span><span class="token punctuation">(</span>theButton<span class="token punctuation">)</span>
+  <span class="token function">expect</span><span class="token punctuation">(</span>theThingToBeOpen<span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true">// fixed!</span>
+<span class="token function">test</span><span class="token punctuation">(</span><span class="token string">&apos;it expands when the button is clicked&apos;</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+  <span class="token function">render</span><span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span>MemoryRouter<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>Sidebar<span class="token operator">/</span><span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>MemoryRouter<span class="token operator">&gt;</span>
+  <span class="token punctuation">)</span>
+  <span class="token function">click</span><span class="token punctuation">(</span>theButton<span class="token punctuation">)</span>
+  <span class="token function">expect</span><span class="token punctuation">(</span>theThingToBeOpen<span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre>
+<p>That&#x2019;s all there is to it.</p>
+<h3 id="starting-at-specific-routes"><a name="starting-at-specific-routes" class="anchor-navigation-ex-anchor" href="#starting-at-specific-routes"><i class="fa fa-link" aria-hidden="true"></i></a><a name="starting-at-specific-routes" class="plugin-anchor" href="#starting-at-specific-routes"><i class="fa fa-link" aria-hidden="true"></i></a>Starting at specific routes</h3>
+<p><memoryrouter> supports the initialEntries and initialIndex props, so you can boot up an app (or any smaller part of an app) at a specific location.</memoryrouter></p>
+<pre class="language-"><code class="lang-js"><span class="token function">test</span><span class="token punctuation">(</span><span class="token string">&apos;current user is active in sidebar&apos;</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+  <span class="token function">render</span><span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span>MemoryRouter initialEntries<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">[</span> <span class="token string">&apos;/users/2&apos;</span> <span class="token punctuation">]</span><span class="token punctuation">}</span><span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>Sidebar<span class="token operator">/</span><span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>MemoryRouter<span class="token operator">&gt;</span>
+  <span class="token punctuation">)</span>
+  <span class="token function">expectUserToBeActive</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre>
+<h3 id="navigating"><a name="navigating" class="anchor-navigation-ex-anchor" href="#navigating"><i class="fa fa-link" aria-hidden="true"></i></a><a name="navigating" class="plugin-anchor" href="#navigating"><i class="fa fa-link" aria-hidden="true"></i></a>Navigating</h3>
+<p>We have a lot of tests that the routes work when the location changes, so you probably don&#x2019;t need to test this stuff. But if you must, since everything happens in render, we do something a little clever like this:</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> render<span class="token punctuation">,</span> unmountComponentAtNode <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;react-dom&apos;</span>
+<span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">&apos;react&apos;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Route<span class="token punctuation">,</span> Link<span class="token punctuation">,</span> MemoryRouter <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;react-router-dom&apos;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Simulate <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;react-addons-test-utils&apos;</span>
+
+<span class="token comment" spellcheck="true">// a way to render any part of your app inside a MemoryRouter</span>
+<span class="token comment" spellcheck="true">// you pass it a list of steps to execute when the location</span>
+<span class="token comment" spellcheck="true">// changes, it will call back to you with stuff like</span>
+<span class="token comment" spellcheck="true">// `match` and `location`, and `history` so you can control</span>
+<span class="token comment" spellcheck="true">// the flow and make assertions.</span>
+<span class="token keyword">const</span> renderTestSequence <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">{</span>
+  initialEntries<span class="token punctuation">,</span>
+  initialIndex<span class="token punctuation">,</span>
+  subject<span class="token punctuation">:</span> Subject<span class="token punctuation">,</span>
+  steps
+<span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> div <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">&apos;div&apos;</span><span class="token punctuation">)</span>
+
+  <span class="token keyword">class</span> <span class="token class-name">Assert</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
+
+    <span class="token function">componentDidMount</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">assert</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token function">componentDidUpdate</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">assert</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token function">assert</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">const</span> nextStep <span class="token operator">=</span> steps<span class="token punctuation">.</span><span class="token function">shift</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>nextStep<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">nextStep</span><span class="token punctuation">(</span><span class="token punctuation">{</span> <span class="token operator">...</span><span class="token keyword">this</span><span class="token punctuation">.</span>props<span class="token punctuation">,</span> div <span class="token punctuation">}</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token function">unmountComponentAtNode</span><span class="token punctuation">(</span>div<span class="token punctuation">)</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>props<span class="token punctuation">.</span>children
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">class</span> <span class="token class-name">Test</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
+    <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token punctuation">(</span>
+        <span class="token operator">&lt;</span>MemoryRouter
+          initialIndex<span class="token operator">=</span><span class="token punctuation">{</span>initialIndex<span class="token punctuation">}</span>
+          initialEntries<span class="token operator">=</span><span class="token punctuation">{</span>initialEntries<span class="token punctuation">}</span>
+        <span class="token operator">&gt;</span>
+          <span class="token operator">&lt;</span>Route render<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">(</span>
+            <span class="token operator">&lt;</span>Assert <span class="token punctuation">{</span><span class="token operator">...</span>props<span class="token punctuation">}</span><span class="token operator">&gt;</span>
+              <span class="token operator">&lt;</span>Subject<span class="token operator">/</span><span class="token operator">&gt;</span>
+            <span class="token operator">&lt;</span><span class="token operator">/</span>Assert<span class="token operator">&gt;</span>
+          <span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token operator">/</span><span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span><span class="token operator">/</span>MemoryRouter<span class="token operator">&gt;</span>
+      <span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token operator">&lt;</span>Test<span class="token operator">/</span><span class="token operator">&gt;</span><span class="token punctuation">,</span> div<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">// our Subject, the App, but you can test any sub</span>
+<span class="token comment" spellcheck="true">// section of your app too</span>
+<span class="token keyword">const</span> App <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">(</span>
+  <span class="token operator">&lt;</span>div<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>Route exact path<span class="token operator">=</span><span class="token string">&quot;/&quot;</span> render<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">(</span>
+      <span class="token operator">&lt;</span>div<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>h1<span class="token operator">&gt;</span>Welcome<span class="token operator">&lt;</span><span class="token operator">/</span>h1<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+    <span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token operator">/</span><span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>Route path<span class="token operator">=</span><span class="token string">&quot;/dashboard&quot;</span> render<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">(</span>
+      <span class="token operator">&lt;</span>div<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>h1<span class="token operator">&gt;</span>Dashboard<span class="token operator">&lt;</span><span class="token operator">/</span>h1<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>Link to<span class="token operator">=</span><span class="token string">&quot;/&quot;</span> id<span class="token operator">=</span><span class="token string">&quot;click-me&quot;</span><span class="token operator">&gt;</span>Home<span class="token operator">&lt;</span><span class="token operator">/</span>Link<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+    <span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token operator">/</span><span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+<span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true">// the actual test!</span>
+<span class="token function">it</span><span class="token punctuation">(</span><span class="token string">&apos;navigates around&apos;</span><span class="token punctuation">,</span> <span class="token punctuation">(</span>done<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+
+  <span class="token function">renderTestSequence</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+
+    <span class="token comment" spellcheck="true">// tell it the subject you&apos;re testing</span>
+    subject<span class="token punctuation">:</span> App<span class="token punctuation">,</span>
+
+    <span class="token comment" spellcheck="true">// and the steps to execute each time the location changes</span>
+    steps<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+
+      <span class="token comment" spellcheck="true">// initial render</span>
+      <span class="token punctuation">(</span><span class="token punctuation">{</span> history<span class="token punctuation">,</span> div <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">// assert the screen says what we think it should</span>
+        console<span class="token punctuation">.</span><span class="token function">assert</span><span class="token punctuation">(</span>div<span class="token punctuation">.</span>innerHTML<span class="token punctuation">.</span><span class="token function">match</span><span class="token punctuation">(</span><span class="token regex">/Welcome/</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+        <span class="token comment" spellcheck="true">// now we can imperatively navigate as the test</span>
+        history<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token string">&apos;/dashboard&apos;</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+      <span class="token comment" spellcheck="true">// second render from new location</span>
+      <span class="token punctuation">(</span><span class="token punctuation">{</span> div <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">assert</span><span class="token punctuation">(</span>div<span class="token punctuation">.</span>innerHTML<span class="token punctuation">.</span><span class="token function">match</span><span class="token punctuation">(</span><span class="token regex">/Dashboard/</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+        <span class="token comment" spellcheck="true">// or we can simulate clicks on Links instead of</span>
+        <span class="token comment" spellcheck="true">// using history.push</span>
+        Simulate<span class="token punctuation">.</span><span class="token function">click</span><span class="token punctuation">(</span>div<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">&apos;#click-me&apos;</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+          button<span class="token punctuation">:</span> <span class="token number">0</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+      <span class="token comment" spellcheck="true">// final render</span>
+      <span class="token punctuation">(</span><span class="token punctuation">{</span> location <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">assert</span><span class="token punctuation">(</span>location<span class="token punctuation">.</span>pathname <span class="token operator">===</span> <span class="token string">&apos;/&apos;</span><span class="token punctuation">)</span>
+        <span class="token comment" spellcheck="true">// you&apos;ll want something like `done()` so your test</span>
+        <span class="token comment" spellcheck="true">// fails if you never make it here.</span>
+        <span class="token function">done</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; tuzhu008 2017 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2018-01-05 23:59:14
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ScrollRestoration.html" class="navigation navigation-prev " aria-label="Previous page: 滚动恢复">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="ReduxIntegration.html" class="navigation navigation-next " aria-label="Next page: Redux 集成">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"测试","level":"2.6","depth":1,"next":{"title":"Redux 集成","level":"2.7","depth":1,"path":"packages/react-router/docs/guides/ReduxIntegration.md","ref":"packages/react-router/docs/guides/ReduxIntegration.md","articles":[]},"previous":{"title":"滚动恢复","level":"2.5","depth":1,"path":"packages/react-router/docs/guides/ScrollRestoration.md","ref":"packages/react-router/docs/guides/ScrollRestoration.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters-small","anchors","anchor-navigation-ex","favicon","copy-code-button","alerts","splitter","book-summary-scroll-position-saver","include-codeblock","ace","prism","prism-themes","-highlight","tbfed-pagefooter","github","sectionx","livereload"],"root":".","styles":{"website":"styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy tuzhu008 2017","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prism-themes/themes/prism-atom-dark.css"]},"ace":{},"github":{"url":"https://github.com/tuzhu008"},"livereload":{},"book-summary-scroll-position-saver":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"night","family":"serif","size":2},"sectionx":{"tag":"b"},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":true},"favicon":{"shortcut":"assets/images/favicon.ico","bookmark":"assets/images/favicon.ico","appleTouch":"assets/images/apple-touch-icon.png","appleTouchMore":{"120x120":"assets/images/apple-touch-icon-120x120.png","180x180":"assets/images/apple-touch-icon-180x180.png"}},"prism-themes":{},"alerts":{},"expandable-chapters-small":{},"copy-code-button":{},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"acefull","theme":"tomorrow","unindent":true},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"tuzhu008","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"react-router 4 ","language":"zh-hans","gitbook":"*","description":"react-router 4  自我学习"},"file":{"path":"packages/react-router/docs/guides/Testing.md","mtime":"2018-01-05T15:59:14.352Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-01-05T15:33:44.650Z"},"basePath":"../../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../../gitbook/gitbook.js"></script>
+    <script src="../../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-book-summary-scroll-position-saver/book-summary-scroll-position-saver.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-sectionx/sectionx.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
