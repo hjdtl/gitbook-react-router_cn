@@ -26,9 +26,9 @@ An object that can have any of the following properties:
 
 ```js
 <Link to={{
-  pathname: '/courses',
-  search: '?sort=name',
-  hash: '#the-hash',
+  pathname: '/courses'
+  search: '?sort=name'
+  hash: '#the-hash'
   state: { fromDashboard: true }
 }}/>
 ```
