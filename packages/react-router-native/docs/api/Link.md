@@ -25,12 +25,7 @@ An object that can have any of the following properties:
   * `state`: State to persist to the `location`.
 
 ```js
-// <Link to={{
-//   pathname: '/course',
-//   search: '?sort=name',
-//   hash: '#the-hash',
-//   state: { fromDashboard: true }
-// }} />
+
 ```
 
 ## replace: bool
